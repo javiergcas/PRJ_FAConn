@@ -1,6 +1,6 @@
 set -e
 module load afni
-PRJDIR='/data/SFIM_FlipAngle/PRJ_FAConn2'
+PRJDIR='/data/SFIM_FlipAngle/PRJ_FAConn'
 ORIG_DATA_DIR=`echo ${PRJDIR}/PrcsData/${SBJ}/D00_OriginalData`
 ANAT_DATA_DIR=`echo ${PRJDIR}/PrcsData/${SBJ}/D01_Anatomical`
 

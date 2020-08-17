@@ -76,6 +76,10 @@ Many scripts contain a variable PRJDIR that tells the scripts what is the projec
  
 # Instructions for Jupyter Notebooks
 
+The python version of this project mostly resides in a series of independent notebooks. Yet these notebooks will use a couple of external files to look project specific information (e.g., project directory, list of subjects, list of flip angles, etc). When you first download this repository, please open the file utils/variables.py and make sure to provide the correct values to PRJDIR (Project Directory), SBJLIST (list of subjects) and FAs (list of flip angles).
+
+In addition, these notebooks rely on a set of python libraries for loading data and plotting data. For your convenience, an yml file with a description of a valid python working environment can be found in the Resources directory. If you have a conda distribution of python on your systems, you can easily create a python virtual envitonment with the necessary libraries using this yml file as a reference.
+
 # Additional Files
 
 This repository contains atlas files for the Schaefer Atlas and the Yeo Atlas. Those files were copied from the following publicly available repository (https://github.com/ThomasYeoLab/CBIG)

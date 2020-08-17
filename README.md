@@ -19,6 +19,19 @@ The scripts are created with the following in mind:
 
 7) There are two type of scripts: bash scripts and jupyter notebooks
 
+# How to run the scripts
+
+Scripts are expected to be run in order, e.g., FA02_XXX, FA03_XX, etc.
+
+Here is a basic description of each script set.
+
+1) **FA02_Preproc_Anat**: This script set will pre-process the anatomical scans. This includes skull striping, bias correction, non-linear transformation to MNI space and tissue segmentation.
+
+2) **FA03_PrepareRefVols4Alignment**: This script set will generate an epi reference volume per EPI run. This refernece volume will be a bias corrected version of the first volume of each run.
+
+3) **FA04_Preproc_fMRI_NoRICOR_PerRun_FIR**: This script calls afni_proc to generate pre-processing scripts for each run separately. We will do analyses in original EPI space to minimize partial voluming. This script will do (among other things), the following: time shift correction, motion correction, compute registration to T1, spatial smoothing, create of masks for different tissues, and nuisance regression.
+
+  
 # Instructions for bash scripts
 
 Bash scripts were created to conduct analyses in the biowulf cluster. For that reason, for every step you can find three different scripts:

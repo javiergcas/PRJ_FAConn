@@ -32,7 +32,9 @@ Here is a basic description of each script set.
 3) **FA04_Preproc_fMRI_NoRICOR_PerRun_FIR**: This script calls afni_proc to generate pre-processing scripts for each run separately. We will do analyses in original EPI space to minimize partial voluming. This script will do (among other things), the following: time shift correction, motion correction, compute registration to T1, spatial smoothing, create of masks for different tissues, and nuisance regression.
 
 4) **FA05_CreateNiis_and_Masks**: This script set does a few extra operations following afni_proc. Those include: transformation of some HEAD/BRIK files into nifti (so that the can be loaded in Python later), aligment of 100 and 200 ROI Shaefer atlas to each fully pre-processed EPI dataset, alignment of 7 and 17 network yeo atlas to each fully pre-processed EPI dataset.
- 
+
+5) **FA06a_ComputeTSNR_perTissue_OrigMethod**: This script set computes TSNR in GM, WM, CSF (and eroded versions of these masks). It computes the TSNR after motion correction, spatial smoothing and nuisance regression.
+  
 # Instructions for bash scripts
 
 Bash scripts were created to conduct analyses in the biowulf cluster. For that reason, for every step you can find three different scripts:
@@ -49,4 +51,4 @@ Many scripts contain a variable PRJDIR that tells the scripts what is the projec
  
 # Instructions for Jupyter Notebooks
 
-
+# Additional Files

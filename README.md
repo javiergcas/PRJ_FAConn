@@ -35,6 +35,14 @@ Here is a basic description of each script set.
 
 5) **FA06a_ComputeTSNR_perTissue_OrigMethod**: This script set computes TSNR in GM, WM, CSF (and eroded versions of these masks). It computes the TSNR after motion correction, spatial smoothing and nuisance regression.
   
+6) **FA07a_Compute_3dTCorrMaps**: This script set computes maps of voxel-wise connectivity using AFNI program 3dTcorrmap.
+
+7) **FA07b_Compute_3dTCorrMaps_ShowResults_AvgMaps**: This script set will bring the maps obtained in 6) to MNI space, so that we can generate an average connectivity map across all subjects in 8).
+
+8) **FA07c_Compute_3dTCorrMaps_AvgAcrossSubject.sh**: This script averages all the subject individual voxel-wise connectivity maps
+
+9) **FA07d_Voxelwise_Connectivity_Results_GM**: This notebook shows summary figures with changes in voxel-wise connectivity across the whole GM ribbon. It also include some basic preliminary statistical analyses.
+
 # Instructions for bash scripts
 
 Bash scripts were created to conduct analyses in the biowulf cluster. For that reason, for every step you can find three different scripts:

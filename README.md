@@ -52,3 +52,5 @@ Many scripts contain a variable PRJDIR that tells the scripts what is the projec
 # Instructions for Jupyter Notebooks
 
 # Additional Files
+
+This repository contains atlas files for the Schaefer Atlas and the Yeo Atlas. Those files were copied from the following publicly available repository (https://github.com/ThomasYeoLab/CBIG)

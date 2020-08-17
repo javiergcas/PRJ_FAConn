@@ -13,11 +13,18 @@ The scripts are created with the following in mind:
 
 4) Original EPI and T1 Data are expected to be in D00_OriginalData
 
-5) Preprocessing of T1 datasets will occur in D01_Anatomical
+5) Files inside D00_OriginalData are expected to have the following names:
+	* P001_Anat+orig.BRIK/HEAD: This is the T1 high resolution anatomical for subject ID P001
+	* P001_fMRI_015+orig.BRIK/HEAD: This is the rest scan for FA = 15 for subject ID P001
+	* P001_fMRI_050+orig.BRIK/HEAD: This is the rest scan for FA = 50 for subject ID P001
+	* P001_fMRI_077+orig.BRIK/HEAD: This is the rest scan for FA = 77 for subject ID P001
+	* P001_fMRI_090+orig.BRIK/HEAD: This is the rest scan for FA = 90 for subject ID P001
 
-6) Preprocessing of EPI data will occur in a different directory per flip angle : D03_Preproc_NoRICOR_FIR_${FA}
+6) Preprocessing of T1 datasets will occur in D01_Anatomical
 
-7) There are two type of scripts: bash scripts and jupyter notebooks
+7) Preprocessing of EPI data will occur in a different directory per flip angle : D03_Preproc_NoRICOR_FIR_${FA}
+
+8) There are two type of scripts: bash scripts and jupyter notebooks
 
 # How to run the scripts
 

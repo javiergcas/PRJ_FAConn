@@ -54,6 +54,7 @@ Here is a basic description of each script set.
 
 11) **FA07f_Voxelwise_Connectivity_Results_7Networks**: This notebook shows summary figures for changes in voxel-wise connectivity on a network-by-network basis across flip angles.
 
+12) **FA08_ROIbasedConnectivity_Restults**: This notebook extract representative time-series per ROI using Nilearn from the fully pre-processed datasets and then computes functional connectivity matrices. Finally, it extract mean within-network connectivity summary metrics and reports them on the form of boxplots.
 
 # Instructions for bash scripts
 

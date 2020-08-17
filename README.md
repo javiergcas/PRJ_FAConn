@@ -56,6 +56,10 @@ Here is a basic description of each script set.
 
 12) **FA08_ROIbasedConnectivity_Restults**: This notebook extract representative time-series per ROI using Nilearn from the fully pre-processed datasets and then computes functional connectivity matrices. Finally, it extract mean within-network connectivity summary metrics and reports them on the form of boxplots.
 
+13) **FA09a_BringCleanDataToMNI**: This script set brings fully pre-processed datasets into MNI space. Those are later concatenated in 14) to perform seed-based analyses with AFNI instacorr
+
+14) **FA09b_BringCleanDataToMNI**: This script concatenates fully-preprocessed datasets in MNI space for each flip angle separately.
+
 # Instructions for bash scripts
 
 Bash scripts were created to conduct analyses in the biowulf cluster. For that reason, for every step you can find three different scripts:

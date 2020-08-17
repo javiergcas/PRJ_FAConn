@@ -45,6 +45,9 @@ Here is a basic description of each script set.
 
 10) **FA07e_CorrMaps_PerNetwork**: This script set will extract summary metrics of voxel-wise connectivity for the 7 Yeo networks. For this purpose we rely on the 3dTcorrmaps generated in step 6). Perhaps a more accurate way to accomplish this is to generate new 3dCorrMaps per network (instead of across the whole GM ribbon), and then generate this network specific maps to extract the per-network summary metrics. This is on the TODO list.
 
+11) **FA07f_Voxelwise_Connectivity_Results_7Networks**: This notebook shows summary figures for changes in voxel-wise connectivity on a network-by-network basis across flip angles.
+
+
 # Instructions for bash scripts
 
 Bash scripts were created to conduct analyses in the biowulf cluster. For that reason, for every step you can find three different scripts:
